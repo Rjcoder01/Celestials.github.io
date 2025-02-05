@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestials - Services</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0a051a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 5, 26, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #8257ff;
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .navbar-links a:hover {
+            color: #8257ff;
+        }
+
+        /* What We Do Section */
+        .what-we-do {
+            min-height: 100vh;
+            background-image: url('page%202.jpg');
+            background-size: cover;
+            background-position: center;
+            padding: 4rem 2rem;
+            padding-top: 6rem; /* Adjusted for navbar */
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            background: linear-gradient(135deg, #8257ff 0%, #d0b3ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .section-subtitle {
+            font-size: clamp(1rem, 2vw, 1.4rem);
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .service-card {
+            padding: 2rem;
+            background: rgba(130, 87, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(130, 87, 255, 0.2);
+        }
+
+        .service-title {
+            font-size: 1.5rem;
+            margin-bottom: 1.5rem;
+            color: #8257ff;
+        }
+
+        .service-list {
+            list-style: none;
+        }
+
+        .service-list li {
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-list li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #8257ff;
+        }
+
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .navbar-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">Celestials.</a>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+        </div>
+    </nav>
+
+    <!-- What We Do Section -->
+    <section class="what-we-do">
+        <div class="section-header">
+            <h2 class="section-title">What We Do?</h2>
+            <p class="section-subtitle">Creating impactful graphics that bring your vision to life with unmatched creativity and quality.</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <h3 class="service-title">Media graphics</h3>
+                <ul class="service-list">
+                    <li>Social media and ads</li>
+                    <li>Thumbnails</li>
+                    <li>Announcements posts</li>
+                    <li>Engagement graphics</li>
+                    <li>Seasonal graphics etc..</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3 class="service-title">Print graphics</h3>
+                <ul class="service-list">
+                    <li>Business collaterls</li>
+                    <li>Advertising Materials</li>
+                    <li>Event Graphics</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
+                <h3 class="service-title">Esports graphics</h3>
+                <ul class="service-list">
+                    <li>Tournament, Event Graphics</li>
+                    <li>Stream Overlays</li>
+                    <li>Esports Merchandise</li>
+                    <li>A-Z Organization Graphics etc..</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

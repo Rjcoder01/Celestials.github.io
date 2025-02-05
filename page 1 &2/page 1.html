@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celestials - Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0a051a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 5, 26, 0.9);
+            backdrop-filter: blur(10px);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .navbar-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #8257ff;
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .navbar-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .navbar-links a:hover {
+            color: #8257ff;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            background-image: url('page%2012.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: right;
+        }
+
+        .logo-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .logo-title-container img {
+            width: 80px; /* Adjust logo size as needed */
+            height: auto;
+        }
+
+        .hero-title {
+            font-size: clamp(2rem, 5vw, 4rem);
+            margin: 0;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1rem, 2vw, 1.5rem);
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-text {
+            font-size: clamp(0.9rem, 1.5vw, 1.2rem);
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .hero-content {
+                text-align: center;
+            }
+
+            .logo-title-container {
+                justify-content: center;
+            }
+
+            .navbar-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <a href="index.html" class="navbar-logo">Celestials.</a>
+        <div class="navbar-links">
+            <a href="index.html">Home</a>
+            <a href="services.html">Services</a>
+            <a href="services.html">Post</a>
+            <a href="services.html">About us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="logo-title-container">
+                <a href="https;//www.celestials/" class="main-site">
+                <img src="main%20logo%20white.png" alt="Celestials Logo">
+                </a>
+                <h1 class="hero-title">Celestials.</h1>
+            </div>
+            <h2 class="hero-subtitle">Media Graphics | Print Graphics | Esports Graphics</h2>
+            <p class="hero-text">Stunning Visuals, Crafted with Celestial Precision.</p>
+        </div>
+    </section>
+</body>
+</html>

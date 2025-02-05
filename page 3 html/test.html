@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Clientele - Celestials</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: #0a051a;
+            color: white;
+            min-height: 100vh;
+        }
+
+        /* Banner Section */
+        .banner {
+            background-image: url(main%20bg.jpg); /* Replace with your banner image path */
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(10, 5, 26, 0.6); /* Dark overlay for better text visibility */
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .banner-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #8257ff 0%, #d0b3ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .banner-subtitle {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.8);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Clientele Section */
+        .clientele {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            text-align: center;
+            margin-bottom: 4rem;
+            background: linear-gradient(135deg, #8257ff 0%, #d0b3ff 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -1rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, #8257ff, transparent);
+        }
+
+        .clients-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .client-card {
+            background: rgba(130, 87, 255, 0.1);
+            border-radius: 10px;
+            padding: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(130, 87, 255, 0.2);
+            backdrop-filter: blur(5px);
+            aspect-ratio: 16/9;
+        }
+
+        .client-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(130, 87, 255, 0.2);
+            border-color: rgba(130, 87, 255, 0.4);
+        }
+
+        .client-logo {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+            filter: brightness(1.1);
+            transition: all 0.3s ease;
+        }
+
+        .client-card:hover .client-logo {
+            filter: brightness(1.2);
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .clients-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+                padding: 1rem;
+            }
+
+            .client-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Section -->
+
+
+    <!-- Clientele Section -->
+    <section class="clientele">
+        <h2 class="section-title">Our Clientele</h2>
+        <div class="clients-grid">
+            <!-- Replace src with your actual logo paths -->
+            <div class="client-card">
+                <img src="logo1.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo2.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo3.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo4.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo5.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo6.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo7.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo8.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo9.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo10.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo11.png" alt="Client Logo" class="client-logo">
+            </div>
+            <div class="client-card">
+                <img src="logo12.png" alt="Client Logo" class="client-logo">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

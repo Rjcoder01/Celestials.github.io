@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Image Layout with Links and Hover</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .container {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            width: 100%;
+            max-width: 1200px; /* Adjust as needed */
+        }
+        .image-container {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: space-between; /* Distribute space evenly */
+            align-items: center;
+            width: 100%;
+        }
+        .image-container a {
+            width: 30%; /* Each image takes up 30% of the container width */
+            display: block;
+            text-decoration: none;
+            transition: transform 0.3s ease, opacity 0.3s ease;
+        }
+        .image-container a:hover {
+            transform: scale(1.05); /* Slightly enlarge on hover */
+            opacity: 0.9; /* Slightly fade on hover */
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover; /* Ensures images maintain aspect ratio */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <a href="https://example.com/link1" target="_blank">
+                <img src="R:\NEW WEBSITE PROJECT\main website code\page 4\01 copy 2.jpg" alt="Image 1">
+            </a>
+            <a href="https://example.com/link2" target="_blank">
+                <img src="R:\NEW WEBSITE PROJECT\main website code\page 4\creative_ad.jpg" alt="Image 2">
+            </a>
+            <a href="https://example.com/link3" target="_blank">
+                <img src="R:\NEW WEBSITE PROJECT\main website code\page 4\size[1] 2.jpg" alt="Image 3">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
